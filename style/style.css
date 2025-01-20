@@ -1,0 +1,99 @@
+
+*{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.raleway-font{
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* header style */
+nav{
+    max-width: 1158px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+    gap: 32px;
+}
+nav >ul >li{
+    list-style: none;
+}
+nav >ul >li >a{
+    text-decoration: none;
+}
+.school{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.school >img{
+    width: 62px;
+    height: 62px;
+}
+.nav-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+.Home{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FEA301;
+}
+.About{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #01ACFD;
+}
+.Facilities{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #05D4DF;
+}
+.Admission{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #5D58EF;
+}
+.nav-btn{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: white;
+    padding: 10px 60px;
+    border-radius: 12px;
+    background-color: #FEA301;
+    border: none;
+}
+.mune{
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .nav-title, .Home, .About, .Facilities, .Admission, .nav-btn{
+       display: none;
+    }
+    .mune{
+        display: block;
+       font-size: 2rem;
+    }
+    nav{
+        border-bottom: 1px solid #FEA301;
+    }
+    .school >img{
+        padding-bottom: 4px;
+    }
+}
