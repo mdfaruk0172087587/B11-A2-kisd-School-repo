@@ -12,6 +12,10 @@
 }
     
     /* header style */
+    body{
+        width: 1440px;
+        margin: 0 auto;
+    }
 header{
   max-width: 1158px;
   margin: 0 auto;
@@ -116,7 +120,106 @@ nav >ul >li >a{
 .banner-image{
     width: 100%;
 }
-
+/* curriculum style */
+.curriculum{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 2.85rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-top: 60px;
+    border: 1px solid red;
+}
+.curriculum-containt{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1160px;
+   margin: 80px auto;
+}
+.curriculum-title{
+    font-size: 1.53rem;
+    font-weight: bold;
+    color: #202020;
+}
+.curriculum-description{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #808080;
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+.kinder-sub{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #64C8FF;
+}
+.elementary-sub{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #F0AA00;
+}
+.middle-sub{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #8700FF;
+}
+.kinder >img, .elementary >img, .middle >img{
+    margin-bottom: 32px;
+    margin-top: 52px;
+}
+.kinder{
+    width: 292px;
+    height: 400px;
+    text-align: center;
+    padding: 53px 40px;
+    border-radius: 18.86px;
+    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);;
+}
+.elementary{
+    width: 292px;
+    height: 400px;
+    text-align: center;
+    padding: 53px 40px;
+    border-radius: 18.86px;
+    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.middle{
+    width: 292px;
+    height: 400px;
+    text-align: center;
+    padding: 53px 40px;
+    border-radius: 18.86px;
+    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.arrow{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.arrow-1, .arrow-2{
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+}
+#left, #rght{
+    padding: 17px 22px;
+    color: white;
+    font-size: 1.5rem;
+}
+.section-1{
+    border: 1PX solid white;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+}
 
 
 
@@ -127,6 +230,9 @@ nav >ul >li >a{
 @media screen and (max-width:576px) {
     .nav-title, .Home, .About, .Facilities, .Admission, .nav-btn{
        display: none;
+    }
+    body{
+        margin: 0;
     }
     .mune{
         display: block;
@@ -148,4 +254,15 @@ nav >ul >li >a{
         text-align: center;
         margin-top: 0;
     }
+    .curriculum-containt{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .kinder, .elementary, .middle{
+        width: 100%;
+        text-align: center;
+    }
+    .section-title, .arrow{
+        align-items: center;
+    }
+    
 }
