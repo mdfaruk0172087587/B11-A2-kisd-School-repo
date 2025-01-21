@@ -10,13 +10,17 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-/* header style */
+    
+    /* header style */
+header{
+  max-width: 1158px;
+  margin: 0 auto;
+ }
+ /* nav style */
 nav{
-    max-width: 1158px;
-    margin: 0 auto;
-    display: flex;
     align-items: center;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
 }
 ul{
     display: flex;
@@ -74,6 +78,44 @@ nav >ul >li >a{
 .mune{
     display: none;
 }
+/* banner style */
+.banner{
+    display: flex;
+    gap: 50px;
+}
+.banner-containt{
+    width: 640px;
+    margin-top: 122px;
+    margin-bottom: 122px;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 24px;
+}
+#empower{
+    color: #FEA301;
+}
+#vision{
+    color: skyblue;
+}
+.banner-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: black;
+}
+.banner-btn{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px 47px;
+    background-color: black;
+    border-radius: 12px;
+}
+.banner-image{
+    width: 100%;
+}
 
 
 
@@ -92,8 +134,18 @@ nav >ul >li >a{
     }
     nav{
         border-bottom: 1px solid #FEA301;
+        width: 100%;
+        justify-content: space-between;
     }
     .school >img{
         padding-bottom: 4px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-containt{
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
     }
 }
