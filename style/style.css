@@ -131,6 +131,7 @@ color: black;
   font-size: 2.86rem;
   color: #000000;
   margin-top: 60px;
+  text-align: center;
 }
 .curriculum-containts{
   display: flex;
@@ -215,7 +216,104 @@ color: black;
   padding: 22px 22px;
   color: white;
 }
-
+/* stories style */
+.stories{
+  border: 1px solid white;
+  background-image: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+}
+.stories-containar{
+  display: flex;
+  max-width: 1160px;
+  margin: 80px auto;
+  gap: 19px;
+}
+.stories-containt{
+  width: 100%;
+  /* height: 630px; */
+  border-radius: 16px;
+  background-color: white;
+}
+.stories-containt-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 61px 99px 51px 38px;
+}
+.stories-containt-description{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666666;
+  margin: 0px 68px 34px 38px;
+}
+.stories-containt-btn{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  padding: 14px 19px;
+  background-color: #3CD8E8;
+  border-radius: 47.93px;
+  border: none;
+  margin-left: 38px;
+  margin-top: -80px;
+}
+.stories-containt >img{
+  width: 100%;
+}
+.stories-containts{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 19px;
+  width: 100%;
+}
+.stories-containars{
+  border-radius: 16px;
+  background-color: white;
+  width: 100%;
+  /* height: 301px; */
+}
+.stories-containars >img{
+  width: 100%;
+}
+.stories-containars-description{
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 43px 54px 33px 38px;
+}
+.btn-1{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  padding: 10px 19px;
+  background-color: #95B226;
+  border-radius: 47.93px;
+  border: none;
+  margin-left: 38px;
+  margin-top: -40px;
+}
+.btn-2{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  padding: 10px 19px;
+  border-radius: 47.93px;
+  border: none;
+  margin-left: 38px;
+  margin-top: -40px;
+  background-color: #5D58F0;
+}
+.view{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  padding: 10px 61px;
+  border-radius: 12px;
+  background-color: black;
+  margin-bottom: 60px;
+}
+.stories-view{
+  text-align: center;
+}
 
 
 
@@ -236,7 +334,7 @@ color: black;
 
 
 @media screen and (max-width:576px) {
-  nav >ul, .nav-btn, .nav-title{
+  nav >ul, .nav-btn, .nav-title, .stories-containt{
     display: none;
   }
   .meno{
@@ -247,6 +345,7 @@ color: black;
     justify-content: space-between;
     border-bottom: 1px solid orange;
     width: 100%;
+    margin: 0;
   }
   .nav-div >img{
     margin-bottom: 20px;
@@ -263,10 +362,15 @@ color: black;
   }
   .kinder, .elementary, .middle{
     width: 80%;
+    margin: 0;
+  }
+  .kinder{
+    background-image: url(/assets/bg.png);
   }
   .curriculum{
     background-image: none;
   }
-  
-  
+  .stories-containars{
+    width: 100%;
+  }
 }
