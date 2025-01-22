@@ -426,8 +426,9 @@ footer{
     margin: 0;
   }
   .kinder, .elementary, .middle{
-    width: 80%;
-    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
   .stories-containars{
     width: 100%;
