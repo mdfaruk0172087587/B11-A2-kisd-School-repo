@@ -4,13 +4,11 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-
 .raleway-font{
   font-family: "Raleway", serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-
 body{
   max-width: 1440px;
   margin: 0 auto;
@@ -116,15 +114,12 @@ color: black;
   background-color: black;
   border-radius: 12px;
 }
-
 /* curriculum style */
 .curriculum{
   text-align: center;
   background-image: url(../assets/bg.png);
- background-position: top;
- background-size: contain;
+ background-position: -1px -35px;
   background-repeat: no-repeat;
-  border: 1px solid white;
 }
 .section-title{
   font-weight: bold;
@@ -218,18 +213,24 @@ color: black;
 }
 /* stories style */
 .stories{
-  border: 1px solid white;
+  padding: 60px 140px;
   background-image: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+  background-position: 1px -40px;
 }
 .stories-containar{
   display: flex;
-  max-width: 1160px;
-  margin: 80px auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
   gap: 19px;
+}
+main{
+  margin: 0;
+}
+section{
+  margin: 0;
 }
 .stories-containt{
   width: 100%;
-  /* height: 630px; */
   border-radius: 16px;
   background-color: white;
 }
@@ -245,6 +246,9 @@ color: black;
   color: #666666;
   margin: 0px 68px 34px 38px;
 }
+.stories-image-1 >img{
+width: 100%;
+}
 .stories-containt-btn{
   font-size: 0.9rem;
   font-weight: 500;
@@ -253,11 +257,8 @@ color: black;
   background-color: #3CD8E8;
   border-radius: 47.93px;
   border: none;
+  margin-top: -90px;
   margin-left: 38px;
-  margin-top: -80px;
-}
-.stories-containt >img{
-  width: 100%;
 }
 .stories-containts{
   display: grid;
@@ -269,7 +270,6 @@ color: black;
   border-radius: 16px;
   background-color: white;
   width: 100%;
-  /* height: 301px; */
 }
 .stories-containars >img{
   width: 100%;
@@ -318,10 +318,11 @@ color: black;
 footer{
   background-color: #01ACFD;
   display: flex;
+  margin-top: 0;
 }
 .footer-containar{
   display: flex;
-  margin: 140px auto;
+  /* margin: 140px auto; */
   width: 1070px;
 }
 .footer-kids{
@@ -373,8 +374,10 @@ footer{
   gap: 10px;
   margin-top: 32px;
 }
-body{
-  border: 10px solid tomato;
+#style{
+  font-size: 4rem;
+  color: red;
+  font-weight: bold;
 }
 
 
@@ -394,7 +397,7 @@ body{
 
 
 @media screen and (max-width:576px) {
-  nav >ul, .nav-btn, .nav-title, .stories-containt{
+  nav >ul, .nav-btn, .nav-title, .stories-containt, .arrow{
     display: none;
   }
   .meno{
@@ -424,25 +427,19 @@ body{
     width: 80%;
     margin: 0;
   }
-  .kinder{
-    /* background-image: url(/assets/bg.png); */
-  }
-  .curriculum{
-    /* background-image: none; */
-  }
   .stories-containars{
     width: 100%;
   }
-
-  body{
-    /* margin: 100%; */
-    /* margin: 0 auto; */
-    margin-left: 20px;
-    width: 100%;
-    margin-right: 0;
-  }
+.footer-containar{
+  width: 50%;
+}
   .footer-containar, footer{
     flex-direction: column;
   }
-  
+  .footer-containar{
+    margin: 30px;
+  }
+  .stories{
+    padding: 0;
+  }
 }
