@@ -227,9 +227,11 @@ color: black;
   width: 100%;
   border-radius: 16px;
   background-color: white;
-  /* position: relative; */
-  /* position: absolute; */
+  position: relative;
 }
+/* .stories-image-1{
+  position: relative;
+} */
 .stories-containt-title{
   font-size: 1.5rem;
   font-weight: bold;
@@ -253,8 +255,9 @@ width: 100%;
   background-color: #3CD8E8;
   border-radius: 47.93px;
   border: none;
-  margin-top: -90px;
-  margin-left: 38px;
+  position: absolute;
+  top: 320px;
+  left: 90px;
 }
 .stories-containts{
   display: grid;
@@ -266,6 +269,7 @@ width: 100%;
   border-radius: 16px;
   background-color: white;
   width: 100%;
+  position: relative;
 }
 .stories-containars >img{
   width: 100%;
@@ -284,8 +288,9 @@ width: 100%;
   background-color: #95B226;
   border-radius: 47.93px;
   border: none;
-  margin-left: 38px;
-  margin-top: -40px;
+  position: absolute;
+  margin-left: -230px;
+  margin-top: 155px;
 }
 .btn-2{
   font-size: 0.9rem;
@@ -294,8 +299,9 @@ width: 100%;
   padding: 10px 19px;
   border-radius: 47.93px;
   border: none;
-  margin-left: 38px;
-  margin-top: -40px;
+  position: absolute;
+  margin-left: -230px;
+  margin-top: 155px;
   background-color: #5D58F0;
 }
 .view{
@@ -438,4 +444,20 @@ footer{
   .stories{
     padding: 0;
   }
+  body{
+    padding-left: 10px;
+  }
+.stories-containars{
+  position: relative;
+}
+.btn-1, .btn-2{
+  position: absolute;
+  top: -20%;
+  left: 130%;
+}
+
+
+
+
+
 }
