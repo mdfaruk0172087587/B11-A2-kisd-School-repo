@@ -445,17 +445,21 @@ footer{
     padding: 0;
   }
   body{
-    /* padding: 10px; */
+    padding: 10px;
   }
-/* .stories-containars{
-  position: relative;
-}
-.btn-1, .btn-2{
+  .stories-containars{
+    position: relative;
+  }
+.btn-1{
   position: absolute;
   top: -20%;
   left: 130%;
-} */
-
+}
+.btn-2{
+  position: absolute;
+  top: -20%;
+  left: 130%;
+}
 
 
 
